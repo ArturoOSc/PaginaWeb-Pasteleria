@@ -1,0 +1,69 @@
+body{
+    width: 100%;
+    height: 720px;
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(356, 90%, 64%, 0.487), hsla(280, 78%, 69%, 0.508), hsla(191, 86%, 49%, 0.501)), url(../img/pastel-verde.gif);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(356, 90%, 64%, 0.487), hsla(280, 78%, 69%, 0.508), hsla(191, 86%, 49%, 0.501)), url(../img/Portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+  }
+  header, .alert{
+    z-index: 100;
+  }
+  .card-img-top{
+    width: 100%;
+    margin-bottom: 15px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5)
+  }
+
+  .description{
+   
+    height: 25px;
+    overflow: hidden;
+    transition: height .3s ease-in .3s;
+  }
+  .description:hover{
+    
+    height: 80px;
+  }
+  .carrito{
+    
+    min-height: 80vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .table__productos{
+    
+    display: flex;
+  }
+  .table__productos > img{
+    
+    width: 30%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
+    margin-left: 10px;
+   
+    
+  }
+
+  .table__cantidad > input{
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+  .hide, .remove{
+    display: none;
+  }
